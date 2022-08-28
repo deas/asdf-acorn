@@ -13,7 +13,8 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - macos-latest
+          # acorn-*-darwin-amd64.tar.gz does not exist
+          # - macos-latest
     runs-on: ${{ matrix.os }}
     steps:
       - name: asdf_plugin_test
